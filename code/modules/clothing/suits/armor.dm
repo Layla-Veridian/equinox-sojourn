@@ -1871,3 +1871,28 @@
 	slowdown = 0.05
 	armor_list = list(melee = 12, bullet = 12, energy = 7, bomb = 10, bio = 40, rad = 0)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+
+//moyo gear
+
+/obj/item/clothing/suit/armor/moyo_scout
+	name = "abyssal scout armour"
+	desc = "Scout armour designed for mobility over protection, do not get shot in this. Made in the Abyss."
+	icon_state = "moyo_scout"
+	item_state = "moyo_scout"
+	blood_overlay_type = "armor"
+	body_parts_covered = UPPER_TORSO|LEGS
+	stiffness = -1
+	slowdown = -0.2
+	armor_list = list(
+		melee = 10,
+		bullet = 5,
+		energy = 5,
+		bomb = 5,
+		bio = 0,
+		rad = 0
+	)
+	siemens_coefficient = 0.4
+	price_tag = 500
+	max_upgrades = 1
+	cold_protection = UPPER_TORSO|LEGS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
